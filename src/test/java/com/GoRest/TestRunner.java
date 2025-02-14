@@ -6,17 +6,17 @@ import com.intuit.karate.junit5.Karate;
 public class TestRunner {
 
 	
-	//@Karate.Test
+	@Karate.Test
 	Karate getMethodForGoRest() {
 		return Karate.run("TestCasesForGoRestGetMethod").relativeTo(getClass());
 	}
 
-	//@Karate.Test
+	@Karate.Test
 	Karate postMethodForGoRest() {
 		return Karate.run("TestCasesForPostMEthod").relativeTo(getClass());
 	}
 	
-	//@Karate.Test
+	@Karate.Test
 	Karate getMethodForReqres() {
 		return Karate.run("TestCasesForGetMethod").relativeTo(getClass());
 	}
